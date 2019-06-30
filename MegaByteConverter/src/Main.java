@@ -1,12 +1,26 @@
-public class MegaByteConverter {
+public class Main {
 
     public static void main(String[] args) {
         boolean response;
         //printMegaByteAndKiloByteConverter(2500);
         //response = BarkingDog.shouldWakeUp(true, -1);
         //response = LeapYear.isLeapYear(1924);
-        System.out.println(SecondsandMinutes.getDurationString (65,49));
-        System.out.println(SecondsandMinutes.getDurationString (3945L));
+        //System.out.println(SecondsandMinutes.getDurationString (65,49));
+        //System.out.println(SecondsandMinutes.getDurationString (3945L));
+        //System.out.println(NumberOfDaysInMonth.getDaysInMonth (1, 2));
+//        System.out.println(NumberPalinDrome.isPalindrome(-101));
+
+
+        int x = 0;
+
+        while (x < 10){
+            x++;
+            System.out.println( x );
+/*            System.out.println("En mijn naam is Pappa " + "Aantal keren laten zien: " + x);*/
+        }
+
+
+
     }
 
     public static void printMegaByteAndKiloByteConverter (int kiloBytes){
