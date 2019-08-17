@@ -23,4 +23,8 @@ public class GreatestCommonDivisor {
             NOTE: Do not add a main method to the solution code.
     */
 
+    public static void getGreatestCommonDivisor (int first, int second){
+
+    }
+
 }
