@@ -13,7 +13,36 @@ public class FirstAndLastDigitSum {
     NOTE: The method sumFirstAndLastDigit needs to be defined as public static like we have been doing so far in the course.
     NOTE: Do not add a  main method to solution code.*/
 
+    public class FirstLastDigitSum {
+        public static int sumFirstAndLastDigit(int number){
+            int firstDigit;
+            int lastDigit;
+            int remainder;
+            int reverse =0;
 
+            if (number < 0){
+                return  -1;
+            } else if (number < 10) {
+                return number + number; //first and lastDigit are the same.
+            } else {
+
+                lastDigit = number % 10;
+
+                while (number > 0){
+                    remainder = number % 10;
+                    reverse += remainder;
+                    number = number / 10;
+
+                    if (number <= 0) {
+                        break;
+                    }
+                    reverse = reverse * 10;
+                }
+
+                firstDigit = reverse % 10;
+                return firstDigit + lastDigit;
+            }
+        }
+    }
 }
-
 
