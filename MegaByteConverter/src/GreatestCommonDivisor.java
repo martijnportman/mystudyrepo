@@ -23,7 +23,38 @@ public class GreatestCommonDivisor {
             NOTE: Do not add a main method to the solution code.
     */
 
-    public static void getGreatestCommonDivisor (int first, int second){
+    public static int getGreatestCommonDivisor (int first, int second){
+
+        if (first <10 || second < 10){
+            return -1;
+        } else {
+
+            int returnInt = -1;
+            int largestNumber;
+            int smallestNumber;
+
+            //Bepaal grootste getal
+            if (first > second) {
+                largestNumber = first;
+                smallestNumber = second;
+            } else {
+                largestNumber = second;
+                smallestNumber = first;
+            }
+
+             //Grootste getal delen om de grootst gemeenschappelijke deler te vinden
+                for (int divideBy = largestNumber; divideBy > 0; divideBy--) {
+                    if (largestNumber % divideBy == 0){
+                        if (smallestNumber % divideBy == 0) {
+                            returnInt = divideBy;
+                            break;
+                        }
+                    }
+                }
+
+            return returnInt;
+
+        }
 
     }
 
