@@ -13,7 +13,6 @@ public class FirstAndLastDigitSum {
     NOTE: The method sumFirstAndLastDigit needs to be defined as public static like we have been doing so far in the course.
     NOTE: Do not add a  main method to solution code.*/
 
-    public class FirstLastDigitSum {
         public static int sumFirstAndLastDigit(int number){
             int firstDigit;
             int lastDigit;
@@ -44,5 +43,5 @@ public class FirstAndLastDigitSum {
             }
         }
     }
-}
+
 
